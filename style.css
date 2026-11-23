@@ -1,0 +1,156 @@
+/* Paleta de cores — substitua pelos códigos hexadecimais dos seus slides */
+:root {
+  --cor-primaria: #2563eb;
+  --cor-secundaria: #1e40af;
+  --cor-fundo: #f8fafc;
+  --cor-texto: #0f172a;
+  --cor-card: #ffffff;
+}
+
+/* Configuração geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Classe ativada pelo JavaScript ao clicar no botão de cor */
+body.tema-escuro {
+  --cor-fundo: #0f172a;
+  --cor-texto: #f1f5f9;
+  --cor-card: #1e293b;
+}
+
+/* Menu superior com Flexbox */
+header {
+  background-color: var(--cor-primaria);
+  color: #ffffff;
+  padding: 16px 32px;
+}
+
+.menu-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.menu-topo ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu-topo a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Estrutura das seções */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.secao-destaque {
+  text-align: center;
+  padding: 48px 20px;
+  background-color: var(--cor-card);
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: var(--cor-primaria);
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: var(--cor-primaria);
+}
+
+.secao {
+  margin-bottom: 32px;
+}
+
+/* Cards responsivos com Flexbox */
+.lista-cards {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.lista-cards li {
+  flex: 1;
+  background-color: var(--cor-card);
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid var(--cor-primaria);
+}
+
+/* Botões */
+button {
+  margin-top: 14px;
+  padding: 10px 20px;
+  background-color: var(--cor-primaria);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: var(--cor-secundaria);
+}
+
+.mensagem-oculta {
+  margin-top: 12px;
+  font-weight: bold;
+  color: var(--cor-primaria);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsividade para celulares e tablets */
+@media (max-width: 768px) {
+  .menu-topo {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .lista-cards {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+}
+/* Define a cor de fundo da página */
+body {
+  background-color: #f8fafc;
+}

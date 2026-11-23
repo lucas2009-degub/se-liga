@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Digital — Seu Nome</title>
+  <!-- Conecta o arquivo de estilos CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Menu de navegação no topo -->
+  <header>
+    <nav class="menu-topo">
+      <span class="logo">Meu Portfólio</span>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#tema">Sobre o Tema</a></li>
+        <li><a href="#topicos">Destaques</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal adaptado dos slides -->
+  <main>
+    <section id="inicio" class="secao-destaque">
+      <h1>Título Principal do Seu Projeto</h1>
+      <p>Subtítulo ou frase de impacto retirada do seu primeiro slide do Canva.</p>
+      <button id="btn-mensagem">Clique para ver uma mensagem</button>
+      <p id="texto-resposta" class="mensagem-oculta"></p>
+    </section>
+
+    <section id="tema" class="secao">
+      <h2>Sobre o Tema</h2>
+      <p>Escreva aqui o resumo apresentado nos seus slides intermediários, explicando o objetivo do trabalho.</p>
+    </section>
+
+    <section id="topicos" class="secao">
+      <h2>Principais Tópicos</h2>
+      <!-- Lista não ordenada traduzida dos tópicos dos slides -->
+      <ul class="lista-cards">
+        <li>
+          <h3>Tópico 1</h3>
+          <p>Descrição curta do primeiro ponto importante.</p>
+        </li>
+        <li>
+          <h3>Tópico 2</h3>
+          <p>Descrição curta do segundo ponto importante.</p>
+        </li>
+        <li>
+          <h3>Tópico 3</h3>
+          <p>Descrição curta do terceiro ponto importante.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="secao">
+      <h2>Personalizar Visual</h2>
+      <p>Teste a troca de paleta de cores da página:</p>
+      <button id="btn-tema">Alternar Cor do Fundo</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Seu Nome — 1º Trimestre</p>
+  </footer>
+
+  <!-- Conecta o arquivo de interatividade JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- Este comentário aparece apenas no código-fonte -->
+<h1>Meu Portfólio Digital</h1>
+<button id="btn-mensagem">Mostrar Mensagem</button>
+<p id="texto-resposta"></p>
+<button onclick="alterarCor()">Mudar Cor do Fundo</button>
